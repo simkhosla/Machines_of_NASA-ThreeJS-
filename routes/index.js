@@ -1,39 +1,86 @@
 var express = require('express');
 var router = express.Router();
 
-//LOADING ALL MODELS
-var voyager = require('../3Dmodels/voyager.json');
-var gemini = require('../3Dmodels/gemini.json');
-var saturnV = require('../3Dmodels/saturnV.json');
-var lunarlander = require('../3Dmodels/lunarlander.json');
-var apollosoyuz = require('../3Dmodels/apollosoyuz.json');
-
-var saturnVhor = require('../3Dmodels/saturnVhor.json');
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('landingpage');
 });
 
-//MODEL routes for getting json
-router.get('/models/voyager', function(req, res, next) {
-  res.json(voyager);
+router.get('/chosemachine', function(req, res, next) {
+  res.render('chosemachine');
 });
 
-router.get('/models/gemini', function(req, res, next) {
-  res.json(gemini);
+//lunar lander
+router.get('/lunarlander/learn', function(req, res, next) {
+  res.render('lunarlander/LLLearn');
 });
 
-router.get('/models/saturnV', function(req, res, next) {
-  res.json(saturnV);
+router.get('/lunarlander/explore', function(req, res, next) {
+  res.render('lunarlander/LLExplore');
 });
 
-router.get('/models/lunarlander', function(req, res, next) {
-  res.json(lunarlander);
+router.get('/lunarlander/gallery', function(req, res, next) {
+  res.render('lunarlander/LLGallery');
 });
 
-router.get('/models/apollosoyuz', function(req, res, next) {
-  res.json(apollosoyuz);
+//voyager
+router.get('/voyager/learn', function(req, res, next) {
+  res.render('voyager/VLearn');
 });
+
+router.get('/voyager/explore', function(req, res, next) {
+  res.render('voyager/VExplore');
+});
+
+router.get('/voyager/gallery', function(req, res, next) {
+  res.render('voyager/VGallery');
+});
+
+//saturnV
+router.get('/saturnV/learn', function(req, res, next) {
+  res.render('saturnV/SLearn');
+});
+
+router.get('/saturnV/explore', function(req, res, next) {
+  res.render('saturnV/SExplore');
+});
+
+router.get('/saturnV/gallery', function(req, res, next) {
+  res.render('saturnV/SGallery');
+});
+
+
+//gemini
+router.get('/gemini/learn', function(req, res, next) {
+  res.render('gemini/GLearn');
+});
+
+router.get('/gemini/explore', function(req, res, next) {
+  res.render('gemini/GExplore');
+});
+
+router.get('/gemini/gallery', function(req, res, next) {
+  res.render('gemini/GGallery');
+});
+
+//apollosoyuz
+router.get('/apollosoyuz/learn', function(req, res, next) {
+  res.render('apollosoyuz/ASLearn');
+});
+
+router.get('/apollosoyuz/explore', function(req, res, next) {
+  res.render('apollosoyuz/ASExplore');
+});
+
+router.get('/apollosoyuz/gallery', function(req, res, next) {
+  res.render('apollosoyuz/ASGallery');
+});
+
+
+
+
+
+
+
 
 module.exports = router;

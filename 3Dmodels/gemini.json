@@ -3,7 +3,6 @@
     "materials": [{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.247843,0.156863,0.021961],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 60928,
@@ -20,7 +19,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -37,7 +35,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15597568,
@@ -54,7 +51,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.646275,0.439216,0.103529],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 238,
@@ -71,7 +67,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658496,
@@ -88,7 +83,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 61166,
@@ -105,7 +99,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.60549,0.60549,0.60549],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15597806,
@@ -122,7 +115,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -139,7 +131,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -156,7 +147,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.8,0.8,0.8],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -173,7 +163,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,

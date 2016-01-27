@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THree Js</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="/javascripts/responsivevoicecommands.js"></script>
+    <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
+    <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
+    <script type="text/javascript" src="/javascripts/apollosoyuz/ANILearn.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+    </div>
+
+    <div class="pageBtns" id="missionBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="factsBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="crewBtn" data-clicks="1"></div>
+    <!-- <div class="pageBtns" id="landingBtn"></div> -->
+
+    <!-- <section id="lunarlanderVideo">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/sTBIr65cL_E" frameborder="0" allowfullscreen></iframe>
+    </section> -->
+
+
+    <div id="homeBtn" class="svg-wrapperW">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/chosemachine" id="aW"><span class="spot"></span>back</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GLearn" class="svg-wrapper-active Learn">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <div id="textW">
+              <a href="/apollosoyuz/learn" id="aW"><span class="spot"></span>Learn</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GExplore" class="svg-wrapperW Explore">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/apollosoyuz/explore" id="aW"><span class="spot"></span>Explore</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GGallery" class="svg-wrapperW GalleryP">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/apollosoyuz/gallery" id="aW"><span class="spot"></span>Gallery</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GComments" class="svg-wrapperW Comments">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/apollosoyuz/comments" id="aW"><span class="spot"></span>Comments</a>
+            </div>
+          </svg>
+    </div>
+
+
+    <div id="missionText">
+      <h3> The Mission: </h3>
+      <p>The first international partnership in space wasn't the International Space Station. It wasn't even the Shuttle-Mir series of missions. It was the Apollo-Soyuz Test Project, the first international human spaceflight. On July 15, 1975, an Apollo spacecraft launched carrying a crew of three and docked two days later on July 17, with a Soyuz spacecraft and its crew of two.</p>
+
+      <p>Designed to test the compatibility of rendezvous and docking systems and the possibility of an international space rescue, the nine-day Apollo-Soyuz mission brought together two former spaceflight rivals: the United States and the Soviet Union.</p>
+
+      <p>The United States launched an Apollo command and service module on a Saturn IB rocket. The Apollo spacecraft, while nearly identical to the type that orbited the moon and later carried astronauts to Skylab, was modified to provide for experiments, extra propellant tanks and the addition of controls and equipment related to the docking module.</p>
+
+      <p>The Soyuz was the primary Soviet spacecraft used for manned flight since its introduction in 1967. The docking module was designed and constructed by NASA to serve as an airlock and transfer corridor between the two craft.</p>
+
+      <p>During nearly two days of joint activities, the mission's two Soviet cosmonauts and three U.S. astronauts carried out five joint experiments and exchanged commemorative items.</p>
+
+      <p>The successful Apollo-Soyuz Test Project paved the way for future international partnerships.</p>
+    </div>
+
+    <div id="factsText">
+      <span> THE FLIGHT CREWS: </span>
+      <p>APOLLO:Thomas P. Stafford, Vance D. Brand, Donald K. Slayton <p>SOYUZ: Alexey A. Leonov, Valery N. Kubasov</p>
+      <span> LAUNCH: </span>
+      <p> APOLLO: July 15, 1975    SOYUZ:July 15, 1975</p>
+      <span> LANDING: </span>
+      <p>APOLLO: July 24, 1975    SOYUZ: July 21, 1975</p>
+      <span> DURATION: </span>
+      <p> 09 days, 07 hours, 28 minutes, July 15-24, 1975</p>
+    </div>
+
+    <div id="crewGallery">
+          <p>One of the most difficult problems to overcome was that of language differences. To alleviate this problem as much as possible, the Americans learned Russian and the Russians learned English. It was found that the best scenario was for the Russians to speak English and for the Americans to speak Russian.</p>
+          <table><tr><td>
+            <img src="/images/apollosoyuz/crew/ThomasStradford.jpg"/>
+          </t2><td>
+            <h2><img src="/images/apollosoyuz/crew/americanlogo.png"/>Thomas Stafford </h2>
+            <p> General Stafford was selected among the second group of astronauts in September 1962 by NASA to participate in Projects Gemini and Apollo. In December 1965, he was the pilot of Gemini 6-A, which was the first rendezvous in space. In June 1966, he was commander of Gemini 9-A and performed three different types of rendezvous, including a demonstration of a rendezvous that would be used in Apollo. From August 1966 to October 1968, he headed the mission planning analysis and software development responsibilities for the astronaut group for Project Apollo. </p>
+          </td></tr></table>
+          <table>
+          <tr><td>
+            <img src="/images/apollosoyuz/crew/vanceBrand.jpg"/>
+          </td><td>
+            <h2> <img src="/images/apollosoyuz/crew/americanlogo.png"/>Vance Brand</h2>
+            <p>He was one of the 19 pilot astronauts selected by NASA in April 1966. He flew on four missions: Apollo-Soyuz, STS-5, STS-41B, and STS-35. Brand was launched on his first spaceflight on 15 July 1975, as Apollo command module pilot on the Apollo-Soyuz Test Project (ASTP) mission. Six records for docked and group flight were set on the mission and are recognized by the Federation Aeronautique Internationale. After the Apollo and Soyuz capsules undocked, Brand was responsible for maneuvering the Apollo for a further two days of scientific experiments and for landing the spacecraft. </p>
+          </td></tr></table>
+          <table>
+          <tr><td>
+            <img src="/images/apollosoyuz/crew/donaldslayton.jpg"/>
+          </td><td>
+            <h2> <img src="/images/apollosoyuz/crew/americanlogo.png"/>Donald Slayton</h2>
+            <p>Slayton made his first spaceflight as Apollo docking module pilot of the ASTP mission, 15-24 July 1975, a joint spaceflight culminating in the first historical meeting in space between American astronauts and Soviet cosmonauts. The crewmembers of both nations participated in a rendezvous and subsequent docking with Apollo. There were 44 hours of docked joint activities during ASTP, highlighted by four crew transfers and the completion of a number of joint scientific experiments and engineering investigations </p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/apollosoyuz/crew/alexi.jpg"/>
+          </td><td>
+            <h2> <img src="/images/apollosoyuz/crew/russianlogo.png"/>Alexey A. Leonov</h2>
+            <p>Alexei Leonov received the Hero of the Soviet Union award for his spacewalk and became deputy commander of the cosmonaut team, teaching other cosmonauts how to perform extravehicular activities. He also worked on the Soviet lunar landing program and was going to be the leader of the first Soviet manned lunar mission. Once that was cancelled after Apollo 11 landed on the moon in 1969, he began training for the Salyut space station project. In 1971, Leonov was assigned to the Salyut 1 mission, but he and his crew were replaced when Copilot Valery Kubasov fell ill. The three-member crew that did fly, however, died on June 29, 1971 during reentry when an air valve failed.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/apollosoyuz/crew/valeryKubasov.jpg"/>
+          </td><td>
+            <h2> <img src="/images/apollosoyuz/crew/russianlogo.png"/>Valery N. Kubasov</h2>
+            <p>In 1966, Kubasov was accepted into the cosmonaut program, and took a complete course of space-flight training. He first entered space as the flight engineer of Soyuz-6, taking part in a group space flight with spaceships Soyuz-7 and Soyuz-8 from October 11 to 16, 1969. On board the Soyuz-6 he conducted experimental welding in outer space, an important step toward the eventual construction of the world's first space station, Salyut-1 (launched on April 19, 1971). Kubasov was assigned to the first crew to occupy Salyut 1, but was replaced when he fell ill, as was the rest of his crew. The three-member crew that did fly, however, died on June 29, 1971 during reentry, when an air valve failed.</p>
+          </td></tr>
+        </table>
+      </div>
+
+
+    <img class="nasalogo" src="/images/nasa.png"/>
+    <script type="text/javascript" src="/javascripts/ApolloSoyuz/apollosoyuzS.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pick a Machine</title>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="/javascripts/responsivevoicecommands.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
+    <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
+    <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
+    <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+    <script src="/javascripts/pages/ANImachinelanding.js"></script>
+  </head>
+  <body>
+      <section align="center" class="loading">
+      <img src="/images/loading.gif"/>
+      </section>
+
+
+    <h5 class="message" align="center"> Hover over a machine's name to explore more! </h5>
+
+    <div id="container">
+    </div>
+
+    <div id="voyager" class="svg-wrapper">
+          <svg height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="145" />
+            <div id="text">
+              <a href="/voyager/learn"><span class="spot"></span>Voyager</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="gemini" class="svg-wrapper">
+          <svg height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="145" />
+            <div id="text">
+              <a href="/gemini/learn"><span class="spot"></span>Gemini</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="saturnfive" class="svg-wrapper">
+          <svg height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="145" />
+            <div id="text">
+              <a href="/saturnV/learn"><span class="spot"></span>Saturn Five</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="lunarlander" class="svg-wrapper">
+          <svg height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="145" />
+            <div id="text">
+              <a href="/lunarlander/learn"><span class="spot"></span>Lunar Lander</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="apollosoyuz" class="svg-wrapper">
+          <svg height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="145" />
+            <div id="text">
+              <a href="/apollosoyuz/learn"><span class="spot"></span>Apollo Soyuz</a>
+            </div>
+          </svg>
+    </div>
+
+
+      <article id="voyagerText">
+          <h3> VOYAGER PROBE </h3>
+          <p> Pioneers 10 and 11, which preceded Voyager, both carried small metal plaques identifying their time and place of origin for the benefit of any other spacefarers that might find them in the distant future. With this example before them, NASA placed a more ambitious message aboard Voyager 1 and 2-a kind of time capsule, intended to communicate a story of our world to extraterrestrials. The Voyager message is carried by a phonograph record-a 12-inch gold-plated copper disk containing sounds and images selected to portray the diversity of life and culture on Earth.</p>
+      </article>
+
+      <article id="geminiText">
+          <h3> GEMINI CAPSULE </h3>
+          <p> Gemini was an early NASA human spaceflight program. Gemini helped NASA get ready for the Apollo moon landings. Ten crews flew missions on the two-man Gemini spacecraft. The Gemini missions were flown in 1965 and 1966. They flew between the Mercury and Apollo programs.</p>
+          <p> NASA named the Gemini spacecraft and program after the constellation Gemini. The name is Latin for "twins." NASA used this name because the Gemini capsule would carry two people. </p>
+      </article>
+
+      <article id="saturnfiveText">
+          <h3> SATURN V ROCKET </h3>
+          <p> The Saturn V was a rocket NASA built to send people to the moon. (The V in the name is the Roman numeral five.) The Saturn V was a type of rocket called a Heavy Lift Vehicle. That means it was very powerful. It was the most powerful rocket that had ever flown successfully. The Saturn V was used in the Apollo program in the 1960s and 1970s. It also was used to launch the Skylab space station. </p>
+      </article>
+
+      <article id="lunarlanderText">
+          <h3> APOLLO LUNAR LANDER </h3>
+          <p> The primary objective of Apollo 11 was to complete a national goal set by President John F. Kennedy on May 25, 1961: perform a crewed lunar landing and return to Earth.</p>
+          <p> Armstrong and Aldrin spent 21 hours, 36 minutes on the moon's surface. After a rest period that included seven hours of sleep, the ascent stage engine fired at 124 hours, 22 minutes. It was shut down 435 seconds later when the Eagle reached an initial orbit of 11 by 55 miles above the moon, and when Columbia was on its 25th revolution.</p>
+      </article>
+
+      <article id="apollosoyuzText">
+          <h3> APOLLO-SOYUZ </h3>
+          <p> The Apollo-Soyuz Test Project (ASTP) was the first space mission to be undertaken as a joint effort between the United States and the Soviet Union. While the fight itself lasted only nine days, from 15-24 July 1975, the planning for it stretched back to 1970. The mission was a resounding success for both nations. Techniques for the future joint space efforts were practiced and a number of success for both nations. Techniques for future joint scientific experiments conducted. The mission was a success, not only as a space flight, but also as a practical expression of the cooperation that existed at the time between the United States and Soviet Union. </p>
+      </article>
+
+    <img class="nasalogo" src="/images/nasa.png"/>
+
+    <script type="text/javascript" src="/javascripts/threejs/chosemachine.js"></script>
+
+  </body>
+</html>

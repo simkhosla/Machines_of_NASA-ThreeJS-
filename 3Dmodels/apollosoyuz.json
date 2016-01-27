@@ -3,7 +3,6 @@
     "materials": [{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.423529,0.567843,0.486275],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -20,7 +19,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15597568,
@@ -37,7 +35,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 60928,
@@ -54,7 +51,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.8,0.8,0.8],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 238,
@@ -71,7 +67,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.398431,0.398431,0.398431],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658496,
@@ -88,7 +83,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 61166,
@@ -105,7 +99,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.213333,0.213333,0.213333],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15597806,
@@ -122,7 +115,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.8,0.8,0.8],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -139,7 +131,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.542745,0.542745,0.542745],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -156,7 +147,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.037647,0.037647,0.037647],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -173,7 +163,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.64,0.64,0.64],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -190,7 +179,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -207,7 +195,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -224,7 +211,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0,0,0],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -241,7 +227,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.599216,0.599216,0.599216],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -258,7 +243,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.38902,0.398431,0.294902],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -275,7 +259,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.614902,0.423529,0.047059],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,
@@ -292,7 +275,6 @@
     },{
         "visible": true,
         "colorSpecular": [0.5,0.5,0.5],
-        "colorAmbient": [0.213333,0.213333,0.213333],
         "depthTest": true,
         "specularCoef": 50,
         "DbgColor": 15658734,

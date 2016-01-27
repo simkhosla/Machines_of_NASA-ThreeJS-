@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THree Js</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="/javascripts/responsivevoicecommands.js"></script>
+    <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
+    <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
+    <script type="text/javascript" src="/javascripts/gemini/ANILearn.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+    </div>
+
+    <div class="pageBtns" id="missionBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="shipBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="crewBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="videoBtn"></div>
+
+    <section id="video">
+      <iframe class="youtube-player" src="https://www.youtube.com/embed/BqBgDsa9yUk"
+      title="YouTube video player" frameborder="0" height="403" width="540"></iframe>
+    </section>
+
+
+    <div id="homeBtn" class="svg-wrapperW">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/chosemachine" id="aW"><span class="spot"></span>back</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GLearn" class="svg-wrapper-active Learn">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <div id="textW">
+              <a href="/gemini/learn" id="aW"><span class="spot"></span>Learn</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GExplore" class="svg-wrapperW Explore">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/gemini/explore" id="aW"><span class="spot"></span>Explore</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GGallery" class="svg-wrapperW GalleryP">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/gemini/gallery" id="aW"><span class="spot"></span>Gallery</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="GComments" class="svg-wrapperW Comments">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/gemini/comments" id="aW"><span class="spot"></span>Comments</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="crewGallery">
+          <table><tr><td>
+            <img src="/images/gemini/crew/geminiIII.png"/>
+          </td><td >
+            <h3> Gemini III </h3>
+            <p>Mercury astronaut Gus Grissom, left, and John Young flew the first manned mission, Gemini III, which launched March 23, 1965. Grissom playfully dubbed the capsule ''Molly Brown'', referring to both a survivor of the sinking of the Titanic and his Mercury capsule, which filled with water and sank in the Atlantic after splashdown.</p>
+          </td></tr></table>
+          <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiIV.jpg"/>
+          </td><td>
+            <h3> Gemini IV </h3>
+            <p>Astronauts Ed White, left, and Jim McDivitt rode Gemini 4 into space on June 3, 1965.</p>
+          </td></tr></table>
+          <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiV.jpg"/>
+          </td><td>
+            <h3> Gemini V </h3>
+            <p>Future moonwalker Pete Conrad and Mercury pioneer Gordon Cooper teamed up for the Gemini V flight, which launched on Aug. 21, 1965.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiVI-A.jpg"/>
+          </td><td>
+            <h3> Gemini VI-A </h3>
+            <p>Tom Stafford, left, and Mercury astronaut Wally Schirra were the crew of Gemini 6. They were originally to launch in October 1965 and rendezvous with an unmanned Agena target vehicle. But the Agena didn't make it to orbit. NASA juggled the schedule, redesignated the mission ''Gemini VI-A' and set it to rendezvous with Gemini VII instead. After an initial launch attempt failed, Stafford and Schirra blasted off on Dec. 15, 1965.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiVII.jpg"/>
+          </td><td>
+            <h3> Gemini VII </h3>
+            <p>Astronauts Jim Lovell, left, and Frank Borman launched on Gemini VII on Dec. 4, 1965 and waited for Gemini VI-A to catch up. They eventually spent two weeks in orbit, the longest-duration flight to that time.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiVIII.jpg"/>
+          </td><td>
+            <h3> Gemini VIII </h3>
+            <p>Before becoming the first human to set foot on the moon, astronaut Neil Armstrong joined another future moonwalker, Dave Scott, on Gemini VIII, launched on March 16, 1966.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiIX-A.jpg"/>
+          </td><td>
+            <h3> Gemini IX-A </h3>
+            <p>Tom Stafford, left, and Gene Cernan, both future Apollo commanders, teamed up on Gemini IX, launched on June 3, 1966. Originally set for a May launch, it was redesignated Gemini IX-A and rescheduled after another problem with an Agena target vehicle. Stafford and Cernan would instead dock with an "augmented target docking adapter."</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiX.jpg"/>
+          </td><td>
+            <h3> Gemini X </h3>
+            <p>Gemini X astronauts John Young and Michael Collins pose next to a model of the Gemini-Titan spacecraft. They launched on July 18, 1966.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiXI.jpg"/>
+          </td><td>
+            <h3> Gemini XI </h3>
+            <p>Astronauts Dick Gordon, left and Pete Conrad launched on Gemini XI on Sept. 12, 1966. The pair would later travel to the moon together during the Apollo 12 mission in November 1969.</p>
+          </td></tr>
+        </table>
+        <table>
+          <tr><td>
+            <img src="/images/gemini/crew/geminiXII.png"/>
+          </td><td>
+            <h3> Gemini XII </h3>
+            <p>Gemini XII astronauts "Buzz" Aldrin, left, and Jim Lovell pose with a mockup of their spacecraft. They launched on Nov. 11, 1966, on the final Gemini mission.</p>
+          </td></tr>
+        </table>
+      </div>
+
+    <div id="missionText">
+      <h3> The Mission: </h3>
+      <p>Gemini was an early NASA human spaceflight program. Gemini helped NASA get ready for the Apollo moon landings. Ten crews flew missions on the two-man Gemini spacecraft. The Gemini missions were flown in 1965 and 1966. They flew between the Mercury and Apollo programs.</p>
+
+      <p>NASA designed the Gemini capsule for this program. On the outside, it looked much like the capsule used for the Mercury missions. It was bigger than the Mercury capsule. It could hold two people instead of one. But each astronaut did not have much room. The Gemini capsule improved on the Mercury spacecraft. Basically, the Mercury spacecraft could change only the way it was facing in its orbit. The Gemini could change what orbit it was in.</p>
+
+      <p>NASA named the Gemini spacecraft and program after the constellation Gemini. The name is Latin for "twins." NASA used this name because the Gemini capsule would carry two people.</p>
+
+      <p>The Gemini capsule flew on a Titan II rocket. The two-stage Titan II was originally a missile. NASA made changes to the missile so it could carry people. Before the first astronauts flew on it, it launched without a crew so that NASA could test its safety.</p>
+    </div>
+
+    <div id="diagramText">
+        <img src="/images/gemini/capsuledrawing.png"/>
+    </div>
+
+
+    <img class="nasalogo" src="/images/nasa.png"/>
+    <script type="text/javascript" src="/javascripts/gemini/geminiS.js"></script>
+  </body>
+</html>

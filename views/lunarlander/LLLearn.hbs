@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THree Js</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="/javascripts/responsivevoicecommands.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
+    <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
+    <script type="text/javascript" src="/javascripts/LunarLander/ANILearn.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+    </div>
+
+    <div class="pageBtns" id="missionBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="factsBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="crewBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="landingBtn" data-clicks="1"></div>
+
+    <section id="landingvideo">
+        <iframe class="youtube-player" src="https://www.youtube.com/embed/sTBIr65cL_E"
+        title="YouTube video player" frameborder="0" height="403" width="540"></iframe>
+    </section>
+
+
+    <div id="homeBtn" class="svg-wrapperW">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/chosemachine" id="aW"><span class="spot"></span>back</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="LLLearn" class="svg-wrapper-active Learn">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <div id="textW">
+              <a href="" id="aW"><span class="spot"></span>Learn</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="LLExplore" class="svg-wrapperW Explore">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/lunarlander/explore" id="aW"><span class="spot"></span>Explore</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="LLGallery" class="svg-wrapperW GalleryP">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/lunarlander/gallery" id="aW"><span class="spot"></span>Gallery</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="LLComments" class="svg-wrapperW Comments">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="" id="aW"><span class="spot"></span>Comments</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="factsText">
+      <p><span> MANUFACTURER: </span> Grumman Aircraft</p>
+      <p><span> DESIGNER: </span> Thomas J. Kelly</p>
+      <p><span> DESIGN LIFE: </span> 75 Hours (extended)</p>
+      <p><span> LAUNCH MASS: </span> 15,200kg</p>
+      <p><span> CREW CAPACITY: </span> 2</p>
+      <p><span> DIMENSIONS: </span>
+      17.9 x 14.0 x 13.3 ft</p>
+      <p><span> FIRST LAUNCH: </span>
+      01.22.1968</p>
+      <p><span> LAST LAUNCH: </span>
+      12.07.1972</p>
+    </div>
+    <div id="missionText">
+      <h3> The Mission: </h3>
+      <p>After one and a half orbits, Apollo 11 gets a "go" for what mission controllers call "Translunar Injection" - in other words, it's time to head for the moon. Three days later the crew is in lunar orbit. A day after that, Armstrong and Aldrin climb into the lunar module Eagle and begin the descent, while Collins orbits in the command module Columbia.</p>
+
+      <p>Collins later writes that Eagle is "the weirdest looking contraption I have ever seen in the sky," but it will prove its worth.</p>
+
+      <p>When it comes time to set Eagle down in the Sea of Tranquility, Armstrong improvises, manually piloting the ship past an area littered with boulders. During the final seconds of descent, Eagle's computer is sounding alarms. (scroll for more)</p>
+
+      <p>It turns out to be a simple case of the computer trying to do too many things at once, but as Aldrin will later point out, "unfortunately it came up when we did not want to be trying to solve these particular problems."</p>
+
+      <p>When the lunar module lands at 4:18 p.m EDT, only 30 seconds of fuel remain. Armstrong radios "Houston, Tranquility Base here. The Eagle has landed." Mission control erupts in celebration as the tension breaks, and a controller tells the crew "You got a bunch of guys about to turn blue, we're breathing again."</p>
+
+      <p>Armstrong will later confirm that landing was his biggest concern, saying "the unknowns were rampant," and "there were just a thousand things to worry about."</p>
+
+      <p>At 10:56 p.m. EDT Armstrong is ready to plant the first human foot on another world. With more than half a billion people watching on television, he climbs down the ladder and proclaims: "That's one small step for a man, one giant leap for mankind."</p>
+
+      <p>Aldrin joins him shortly, and offers a simple but powerful description of the lunar surface: "magnificent desolation." They explore the surface for two and a half hours, collecting samples and taking photographs.</p>
+
+      <p>They leave behind an American flag, a patch honoring the fallen Apollo 1 crew, and a plaque on one of Eagle's legs. It reads, "Here men from the planet Earth first set foot upon the moon. July 1969 A.D. We came in peace for all mankind."</p>
+
+      <p>Armstrong and Aldrin blast off and dock with Collins in Columbia. Collins later says that "for the first time," he "really felt that we were going to carry this thing off."</p>
+
+      <p>The crew splashes down off Hawaii on July 24. Kennedy's challenge has been met. Men from Earth have walked on the moon and returned safely home.</p>
+
+      <p>In an interview years later, Armstrong praises the "hundreds of thousands" of people behind the project. "Every guy that's setting up the tests, cranking the torque wrench, and so on, is saying, man or woman, 'If anything goes wrong here, it's not going to be my fault.'"</p>
+
+      <p>In a post-flight press conference, Armstrong calls the flight "a beginning of a new age," while Collins talks about future journeys to Mars.</p>
+
+      <p>Over the next three and a half years, 10 astronauts will follow in their footsteps. Gene Cernan, commander of the last Apollo mission leaves the lunar surface with these words: "We leave as we came and, God willing, as we shall return, with peace, and hope for all mankind."</p>
+    </div>
+
+
+      <section id="crewSection">
+        <div id="slide1Text">
+          <h3> The Crew: </h3>
+          <p> On May 25, 1961, President John F. Kennedy announced the goal of sending astronauts to the moon before the end of the decade.</p>
+          <p>Eight years later at 9:32 a.m. EDT on July 16, 1969, that dream became a reality as the swing arms moved away and a plume of flame signaled the liftoff of the Apollo 11 carrying astronauts Neil A. Armstrong, Michael Collins and Buzz Aldrin from Kennedy Space Center Launch Complex 39A to the moon.</p>
+          <div class="prev">prev</div>
+          <div class="next">next</div>
+        </div>
+        <div id="slide2Text">
+          <h4> Neil Armstrong </h4>
+          <p>Neil A. Armstrong, the first man to walk on the moon, was born in Wapakoneta, Ohio,
+          on August 5, 1930. He began his NASA career in Ohio. After serving as a naval aviator from 1949 to 1952, Armstrong joined the National Advisory Committee for Aeronautics (NACA) in 1955. His first assignment was with the NACA Lewis Research Center (now NASA Glenn) in Cleveland. Over the next 17 years, he was an engineer, test pilot, astronaut and administrator for NACA and its successor agency, the National Aeronautics and Space Administration (NASA).</p>
+          <div class="prev">prev</div>
+          <div class="next">next</div>
+        </div>
+        <div id="slide3Text">
+          <h4> Buzz Aldrin </h4>
+          <p>Aldrin was one of the third group of astronauts named by NASA in October 1963.On November 11, 1966, he and command pilot James Lovell were launched into space in the Gemini 12 spacecraft on a 4-day flight, which brought the Gemini program to a successful close. Aldrin established a new record for extravehicular activity (EVA), spending 5-1/2 hours outside the spacecraft. He served as lunar module pilot for Apollo 11, July 16-24, 1969, the first manned lunar landing mission. Aldrin followed Neil Armstrong onto the lunar surface on July 20, 1969, completing a 2-hour and 15 minute lunar EVA. </p>
+          <div class="prev">prev</div>
+          <div class="next">next</div>
+        </div>
+        <div id="slide4Text">
+          <h4> Michael Collins</h4>
+          <p>Collins served as command module pilot on Apollo 11, July 16-24, 1969--the first lunar landing mission. He remained aboard the command module , "Columbia," on station in lunar orbit while Neil Armstrong , spacecraft commander, and Buzz Aldrin, lunar module pilot, descended to the lunar surface in their lunar module "Eagle." Collins performed the final redocking maneuvers following a successful lunar orbit rendezvous which was initiated by Armstrong and Aldrin from within the "Eagle" after their ascent from the lunar surface. </p>
+          <div class="prev">prev</div>
+          <div class="next">next</div>
+        </div>
+
+        <div class="carousel" data-slide="1">
+          <div class="carousel__slide">
+            <img src="/images/lunarlander/allthree.jpg" />
+          </div>
+          <div class="carousel__slide">
+            <img src="/images/lunarlander/neilarmstrong.jpg" />
+          </div>
+          <div class="carousel__slide">
+            <img src="/images/lunarlander/BuzzAldrin.jpg" />
+          </div>
+          <div class="carousel__slide">
+            <img src="/images/lunarlander/MichaelCollins.jpg" />
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <img class="nasalogo" src="/images/nasa.png"/>
+    <script type="text/javascript" src="/javascripts/LunarLander/lunarlanderS.js"></script>
+  </body>
+</html>

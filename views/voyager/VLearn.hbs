@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THree Js</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="/javascripts/responsivevoicecommands.js"></script>
+    <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
+    <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
+    <script type="text/javascript" src="/javascripts/voyager/ANILearn.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+    </div>
+
+    <div class="pageBtns" id="missionBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="timelineBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="soundsBtn" data-clicks="1"></div>
+    <!-- <div class="pageBtns" id="landingBtn"></div> -->
+
+    <!-- <section id="lunarlanderVideo">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/sTBIr65cL_E" frameborder="0" allowfullscreen></iframe>
+    </section> -->
+
+
+    <div id="homeBtn" class="svg-wrapperW">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/chosemachine" id="aW"><span class="spot"></span>back</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="VLearn" class="svg-wrapper-active Learn">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <div id="textW">
+              <a href="/voyager/learn" id="aW"><span class="spot"></span>Learn</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="VExplore" class="svg-wrapperW Explore">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/voyager/explore" id="aW"><span class="spot"></span>Explore</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="VGallery" class="svg-wrapperW GalleryP">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/voyager/gallery" id="aW"><span class="spot"></span>Gallery</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="VComments" class="svg-wrapperW Comments">
+          <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
+            <div id="textW">
+              <a href="/voyager/comments" id="aW"><span class="spot"></span>Comments</a>
+            </div>
+          </svg>
+    </div>
+
+    <div id="timelineText">
+      <h3> Timeline: </h3>
+      <p> The Voyager spacecraft launched in August and September of 1977 and spent more than 11 years exploring the likes of Jupiter, Saturn, Uranus and Neptune before officially heading off toward interstellar space in 1989.</p>
+      <p><span> 1977: </span> Mariner Jupiter/Saturn 1977 is renamed Voyager</p>
+      <p><span> 1977 (Aug. 20): </span> Voyager 2 launched from Kennedy Space Flight Center</p>
+      <p><span> 1977 (Sept. 5): </span> Voyager 1 launched from Kennedy Space Flight Center. Voyager 1 returns first spacecraft photo of Earth and Moon</p>
+      <p><span> 1979 (Mar. 5): </span> Voyager 1 makes its closest approach to Jupiter</p>
+      <p><span> 1979 (July 9): </span> Voyager 2 makes its closest approach to Jupiter</p>
+      <p><span> 1980 (Nov. 12): </span>Voyager 1 flies by Saturn. Voyager 1 begins its trip out of the Solar System</p>
+      <p><span> 1981 (Aug. 25): </span>Voyager 2 flies by Saturn</p>
+      <p><span> 1982: </span>Deep Space Network upgrades two 26-m antennas to 34-m</p>
+      <p><span> 1986 (Jan. 24): </span> Voyager 2 has the first-ever encounter with Uranus. Deep Space Network begins expansion of 64-m antennas to 70-m</p>
+      <p><span> 1987: </span>Voyager 2 "observes" Supernova 1987A</p>
+      <p><span> 1988: </span>Voyager 2 returns first color images of Neptune</p>
+      <p><span> 1989 (Aug. 25): </span>Voyager 2 is the first spacecraft to observe Neptune. Voyager 2 begins its trip out of the Solar System, below the ecliptic plane</p>
+      <p><span>1990 (Jan. 1):</span> Begins Voyager Interstellar Mission</p>
+      <p><span>1990 (Feb. 14):</span>Last Voyager Images - Portrait of the Solar System</p>
+      <p><span>1998 (Feb. 17):</span>Voyager 1 passes Pioneer 10 to become the most distant human-made object in space</p>
+      <p><span>2004 (Dec. 15):</span>Voyager 1 crosses Termination Shock</p>
+      <p><span>2007 (Sep. 5):</span> Voyager 2 crosses Termination Shock</p>
+      <p><span>2012 (Aug. 25):</span>Voyager 1 enters Interstellar Space</p>
+    </div>
+
+    <div id="missionText">
+      <h3> The Mission: </h3>
+      <p>The Voyager mission was officially approved in May 1972. Through the dedicated efforts of many skilled personnel for over three decades, the Voyagers have returned knowledge about the outer planets that had not existed in all of the preceding history of astronomy and planetary science. The Voyager spacecrafts are still performing like champs.</p>
+
+      <p>It must come as no surprise that there are many remarkable, "gee-whiz" facts associated with the various aspects of the Voyager mission. These tidbits have been summarized below in appropriate categories. Several may seem difficult to believe, but they are all true and accurate.</p>
+
+      <p>The total cost of the Voyager mission from May 1972 through the Neptune encounter (including launch vehicles, radioactive power source (RTGs), and DSN tracking support) is 865 million dollars. At first, this may sound very expensive, but the fantastic returns are a bargain when we place the costs in the proper perspective. It is important to realize that:</p>
+
+      <p>On a per-capita basis, this is only 8 cents per U.S. resident per year, or roughly half the cost of one candy bar each year since project inception.</p>
+      <p>The entire cost of Voyager is a fraction of the daily interest on the U.S. national debt.</p>
+
+      <p>A total of 11,000 workyears was devoted to the Voyager project through the Neptune encounter. This is equivalent to one-third the amount of effort estimated to complete the great pyramid at Giza to King Cheops.</p>
+
+      <p>A total of five trillion bits of scientific data had been returned to Earth by both Voyager spacecraft at the completion of the Neptune encounter. This represents enough bits to fill more than seven thousand music CDs.</p>
+
+      <p>The sensitivity of our deep-space tracking antennas located around the world is truly amazing. The antennas must capture Voyager information from a signal so weak that the power striking the antenna is only 10 exponent -16 watts (1 part in 10 quadrillion). A modern-day electronic digital watch operates at a power level 20 billion times greater than this feeble level.</p>
+    </div>
+
+
+    <img class="nasalogo" src="/images/nasa.png"/>
+    <script type="text/javascript" src="/javascripts/voyager/voyagerS.js"></script>
+  </body>
+</html>
