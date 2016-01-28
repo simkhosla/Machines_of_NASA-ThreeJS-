@@ -23,8 +23,20 @@ router.get('/:id', function(req, res, next) {
 router.post('/', function(req, res, next) {
   model.create(req.body, function(error, comment){
     if (error) console.log(error);
-    res.json(comment);
+    console.log(req.body);
+    if (req.body.Owner == "LunarLander") {
+      res.redirect('/lunarlander/comments');
+    } else if (req.body.Owner == "Gemini") {
+      res.redirect('/gemini/comments');
+    } else if (req.body.Owner == "SaturnV") {
+      res.redirect('/saturnV/comments');
+    } else if (req.body.Owner == "Voyager") {
+      res.redirect('/voyager/comments');
+    } else if (req.body.Owner == "ApolloSoyuz") {
+      res.redirect('/apollosoyuz/comments');
+    }
   });
+
 });
 
 //edit comment

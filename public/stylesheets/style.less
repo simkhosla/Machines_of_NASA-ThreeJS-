@@ -779,8 +779,59 @@ td {
 }
 #image > .i8 {
   transform: rotateY(315deg) translateZ(485px);
-  -moz-transform: rotateY(315deg) translateZ(485px);
+  -moz-transform: rotateY(115deg) translateZ(485px);
   -o-transform: rotateY(315deg) translateZ(485px);
   -ms-transform: rotateY(315deg) translateZ(485px);
   -webkit-transform: rotateY(315deg) translateZ(485px);
+}
+
+#commentBox {
+  z-index: 1;
+  position: fixed;
+  left: 250px;
+  top: 50px;
+  right: 10px;
+  font-family: 'VT323', ;
+  font-size: 12px;
+  color: white;
+  height: 420px;
+  overflow: scroll;
+}
+
+input[type="textarea"] {
+    margin-top: 0;
+    width: 600px;
+    text-align: center;
+    height: 100px;
+    border-radius: 8px;
+    font-family: 'VT323', ;
+    font-size: 14px;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'VT323', ;
+  font-size: 14px;
+}
+
+.comment {
+  margin-left: 30px;
+}
+
+.commentSpan {
+  color: #8bd5ec;
+}
+
+.commentBtn {
+  font-family: 'VT323', ;
+  font-size: 18px;
+  padding: 3px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  border-radius: 4px;
 }

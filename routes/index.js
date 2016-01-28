@@ -25,20 +25,19 @@ router.get('/lunarlander/gallery', function(req, res, next) {
 });
 
 router.get('/lunarlander/comments', function(req, res, next) {
-  // var llComments = [];
-  // model.find(function(error, comments){
-  //   if (error) console.log(error);
-  //   for (var i in comments) {
-  //     if (comments[i].Owner == "LunarLander") {
-  //       lunarlanderComments.push(comments[i]);
-  //     }
-  //   }
-  //   res.render('lunarlander/LLComments', {
-  //     comments: llComments
-  //   });
-  // });
+  var llComments = [];
+  model.find(function(error, comments){
+    if (error) console.log(error);
+    for (var i in comments) {
+      if (comments[i].Owner == "LunarLander") {
+        llComments.push(comments[i]);
+      }
+    }
+    res.render('lunarlander/LLComments', {
+      comments: llComments
+    });
+  });
 
-  res.render('lunarlander/LLComments');
 
 });
 
@@ -56,20 +55,18 @@ router.get('/voyager/gallery', function(req, res, next) {
 });
 
 router.get('/voyager/comments', function(req, res, next) {
-  // var voyagerComments = [];
-  // model.find(function(error, comments){
-  //   if (error) console.log(error);
-  //   for (var i in comments) {
-  //     if (comments[i].Owner == "Voyager") {
-  //       voyagerComments.push(comments[i]);
-  //     }
-  //   }
-  //   res.render('voyager/VComments', {
-  //     comments: voyagerComments
-  //   });
-  // });
-
-  res.render('voyager/VComments');
+  var voyagerComments = [];
+  model.find(function(error, comments){
+    if (error) console.log(error);
+    for (var i in comments) {
+      if (comments[i].Owner == "Voyager") {
+        voyagerComments.push(comments[i]);
+      }
+    }
+    res.render('voyager/VComments', {
+      comments: voyagerComments
+    });
+  });
 
 
 });
@@ -88,20 +85,19 @@ router.get('/saturnV/gallery', function(req, res, next) {
 });
 
 router.get('/saturnV/comments', function(req, res, next) {
-  // var saturnVComments = [];
-  // model.find(function(error, comments){
-  //   if (error) console.log(error);
-  //   for (var i in comments) {
-  //     if (comments[i].Owner == "SaturnV") {
-  //       saturnVComments.push(comments[i]);
-  //     }
-  //   }
-  //   res.render('saturnV/SComments', {
-  //     comments: saturnVComments
-  //   });
-  // });
+  var saturnVComments = [];
+  model.find(function(error, comments){
+    if (error) console.log(error);
+    for (var i in comments) {
+      if (comments[i].Owner == "SaturnV") {
+        saturnVComments.push(comments[i]);
+      }
+    }
+    res.render('saturnV/SComments', {
+      comments: saturnVComments
+    });
+  });
 
-  res.render('saturnV/SComments');
 
 });
 
@@ -120,20 +116,18 @@ router.get('/gemini/gallery', function(req, res, next) {
 });
 
 router.get('/gemini/comments', function(req, res, next) {
-  // var geminiComments = [];
-  // model.find(function(error, comments){
-  //   if (error) console.log(error);
-  //   for (var i in comments) {
-  //     if (comments[i].Owner == "Gemini") {
-  //       geminiComments.push(comments[i]);
-  //     }
-  //   }
-  //   res.render('gemini/GComments', {
-  //     comments: geminiComments
-  //   });
-  // });
-
-  res.render('gemini/GComments');
+  var geminiComments = [];
+  model.find(function(error, comments){
+    if (error) console.log(error);
+    for (var i in comments) {
+      if (comments[i].Owner == "Gemini") {
+        geminiComments.push(comments[i]);
+      }
+    }
+    res.render('gemini/GComments', {
+      comments: geminiComments
+    });
+  });
 
 });
 
@@ -151,20 +145,18 @@ router.get('/apollosoyuz/gallery', function(req, res, next) {
 });
 
 router.get('/apollosoyuz/comments', function(req, res, next) {
-  // var asComments = [];
-  // model.find(function(error, comments){
-  //   if (error) console.log(error);
-  //   for (var i in comments) {
-  //     if (comments[i].Owner == "ApolloSoyuz") {
-  //       asComments.push(comments[i]);
-  //     }
-  //   }
-  //   res.render('apollosoyuz/ASComments', {
-  //     comments: asComments
-  //   });
-  // });
-
-  res.render('apollosoyuz/ASComments');
+  var asComments = [];
+  model.find(function(error, comments){
+    if (error) console.log(error);
+    for (var i in comments) {
+      if (comments[i].Owner == "ApolloSoyuz") {
+        asComments.push(comments[i]);
+      }
+    }
+    res.render('apollosoyuz/ASComments', {
+      comments: asComments
+    });
+  });
 
 });
 
