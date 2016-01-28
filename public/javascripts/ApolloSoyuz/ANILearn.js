@@ -41,14 +41,14 @@ $(document).ready(function() {
     var click = +$(this).data('clicks') || 0;
     if (click % 2 == 1) {
         $('#crewGallery').velocity("transition.slideRightBigIn");
-        $("#crewBtn").css('background-image', 'url(/images/buttons/lunarlander/crewH.png)');
+        $("#crewBtn").css('background-image', 'url(/images/buttons/lunarlander/CrewH.png)');
         for (var i = 2; i < 104; i++) {
         if (scene.children[i].name == "apollosoyuz") {
         scene.children[i].material.visible = false;
         }};
     }else{
         $('#crewGallery').velocity("transition.slideRightBigOut");
-        $("#crewBtn").css('background-image', 'url(/images/buttons/lunarlander/crewA.png)');
+        $("#crewBtn").css('background-image', 'url(/images/buttons/lunarlander/CrewA.png)');
         for (var i = 2; i < 104; i++) {
         if (scene.children[i].name == "apollosoyuz") {
         scene.children[i].material.visible = true;
