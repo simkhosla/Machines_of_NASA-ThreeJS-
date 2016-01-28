@@ -29,10 +29,10 @@ $(document).ready(function() {
     if (click % 2 == 1) {
       console.log($(this).data);
         $('#timelineText').velocity("transition.slideRightBigIn");
-        $("#factsBtn").css('background-image', 'url(/images/buttons/lunarlander/factsH.png)');
+        $("#factsBtn").css('background-image', 'url(/images/buttons/lunarlander/FactsH.png)');
     }else{
         $('#timelineText').velocity("transition.slideRightBigOut");
-        $("#factsBtn").css('background-image', 'url(/images/buttons/lunarlander/factsA.png)');
+        $("#factsBtn").css('background-image', 'url(/images/buttons/lunarlander/FactsA.png)');
     };
     $(this).data('clicks',click+1);
   });
