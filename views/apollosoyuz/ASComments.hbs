@@ -16,13 +16,17 @@
   <body>
 
     <div id="commentBox">
-      <form class="" action="/comment" method="post">
-        <input type="textarea" placeholder="What do you think of the Voyager Probe?" name="Comment"></input>
+      <table><tr><td>
+      <form class="" action="/comments" method="post">
+        <input type="textarea" placeholder="What do you think of the Apollo Soyuz?" name="Comment"></input>
+      </td><td>
+        <input type="text" placeholder="What is your name?" name="Name"></input>
         <input type="hidden" name="Owner" value="ApolloSoyuz"></input>
-        <input type="submit" class="commentBtn">Add Comment</input>
+        <p><input type="submit" class="commentBtn" value="Add Comment"></input></p>
+      </td></tr></table>
       </form>
       {{#each comments}}
-        <p><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
+        <p class="comment"><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
       {{/each}}
     </div>
 
