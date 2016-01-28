@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Machines of Nasa: Apollo Soyuz</title>
+    <title>Machines of Nasa: Saturn V</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script src="/javascripts/responsivevoicecommands.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
     <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
     <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
     <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
@@ -15,11 +15,18 @@
   </head>
   <body>
 
-    <div id="exploreMessage">
-      <p> Use your mouse to explore the model. </p>
-      <p> Click and drag to move the model.</p>
-      <p> Scroll in and out on your trackpad to zoom.</p>
+    <div id="commentBox">
+      <form class="" action="/comment" method="post">
+        <input type="textarea" placeholder="What do you think of the Voyager Probe?" name="Comment"></input>
+        <input type="hidden" name="Owner" value="SaturnV"></input>
+        <input type="submit" class="commentBtn">Add Comment</input>
+      </form>
+      {{#each comments}}
+        <p><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
+      {{/each}}
     </div>
+
+
 
     <div id="container">
     </div>
@@ -33,41 +40,45 @@
           </svg>
     </div>
 
+
+
     <div id="LLLearn" class="svg-wrapperW Learn">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
             <rect id="shapeW" height="40" width="145" />
             <div id="textW">
-              <a href="/apollosoyuz/learn" id="aW"><span class="spot"></span>Learn</a>
+              <a href="/saturnV/learn" id="aW"><span class="spot"></span>Learn</a>
             </div>
           </svg>
     </div>
 
-    <div id="LLExplore" class="svg-wrapper-active Explore">
+    <div id="LLExplore" class="svg-wrapperW Explore">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
             <div id="textW">
-              <a href="/apollosoyuz/explore" id="aW"><span class="spot"></span>Explore</a>
+              <a href="/saturnV/explore" id="aW"><span class="spot"></span>Explore</a>
             </div>
           </svg>
     </div>
 
     <div id="LLGallery" class="svg-wrapperW GalleryP">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
-            <rect id="shapeW" height="40" width="145" />
             <div id="textW">
-              <a href="/apollosoyuz/gallery" id="aW"><span class="spot"></span>Gallery</a>
+              <a href="/saturnV/gallery" id="aW"><span class="spot"></span>Gallery</a>
             </div>
           </svg>
     </div>
 
-    <div id="LLComments" class="svg-wrapperW Comments">
+
+
+    <div id="LLComments" class="svg-wrapper-active Comments">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
             <rect id="shapeW" height="40" width="145" />
             <div id="textW">
-              <a href="/apollosoyuz/comments" id="aW"><span class="spot"></span>Comments</a>
+              <a href="/saturnV/comments" id="aW"><span class="spot"></span>Comments</a>
             </div>
           </svg>
     </div>
     <img class="nasalogo" src="/images/nasa.png"/>
-  <script type="text/javascript" src="/javascripts/ApolloSoyuz/apollosoyuzE.js"></script>
+  <script type="text/javascript" src="/javascripts/threejs/stars.js"></script>
   </body>
 </html>

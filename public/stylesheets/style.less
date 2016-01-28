@@ -196,6 +196,12 @@ p {
 
 span {
   font-size: 1.2em;
+  font-family: 'VT323', ;
+}
+
+li {
+  font-family: 'VT323', ;
+  font-size: 1em;
 }
 /*
     Spot is the span on the inside of the href that
@@ -395,6 +401,12 @@ make it thinner, then set it to again wrap around the entire parent element.
   background: url('/images/buttons/launchA.png');
   background-size: cover;
 }
+
+#videoBtn {
+  top: 60%;
+  background: url('/images/buttons/videoA.png');
+  background-size: cover;
+}
 //
 // #missionBtn:hover, #missionBtn:active {
 //   background: url('/images/buttons/LunarLander/MissionH.png');
@@ -475,12 +487,29 @@ make it thinner, then set it to again wrap around the entire parent element.
   font-size: 12px;
 }
 
-#landingvideo, #launchvideo {
+#landingvideo, #launchvideo, #video {
   z-index: 1;
   position: fixed;
   right: 23%;
-  top: 7%;
+  top: 5%;
   display: none;
+}
+
+#sounds {
+  z-index: 1;
+  position: fixed;
+  left: 350px;
+  top: 40px;
+  display: none;
+  width: 750px;
+  color: white;
+  height: 380px;
+  overflow: scroll;
+}
+
+.voyagerTableCell {
+  width: 150px;
+  margin-left: -30px;
 }
 
 iframe {
@@ -491,6 +520,7 @@ iframe {
     top: 60px;
     font-size: 20px;
     right: 20px;
+
 }
 
 #timelineText{
@@ -510,7 +540,7 @@ td {
 #crewSection, #diagramText, #crewGallery {
   display: none;
   position: fixed;
-  top: 10%;
+  top: 6%;
   left: 30%;
 }
 
@@ -523,7 +553,7 @@ td {
 }
 
 #diagramText {
-  height: 400px;
+  height: 380px;
   overflow: scroll;
   right: 10%;
 }

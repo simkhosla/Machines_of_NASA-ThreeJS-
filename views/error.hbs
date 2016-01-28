@@ -1,3 +1,24 @@
-<h1>{{message}}</h1>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+  body {
+    background: black;
+    color: white;
+    font-family: 'Special Elite', cursive;
+      font-size: 40px;
+  }
+</style>
+<h1>404: Page Not Found</h1>
 <h2>{{error.status}}</h2>
 <pre>{{error.stack}}</pre>
+
+<div id="commentBox">
+  <form class="" action="/comment" method="post">
+    <input type="textarea" placeholder="What do you think of the Voyager Probe?" name="Comment"></input>
+    <input type="hidden" name="Owner" value="Voyager"></input>
+    <input type="submit" class="commentBtn">Add Comment</input>
+  </form>
+  {{#each comments}}
+    <p><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
+  {{/each}}
+</div>

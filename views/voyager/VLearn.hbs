@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>THree Js</title>
+    <title>Machines of Nasa: Voyager</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.js"></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script src="/javascripts/responsivevoicecommands.js"></script>
     <!-- <script type="text/javascript" src="KeyboardControls.js"></script> -->
-    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.min.js"></script>
-    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.js"></script>
     <script type="text/javascript" src="/javascripts/TrackballControl.js"></script>
     <script type="text/javascript" src="/javascripts/JSONLoader.js"></script>
     <script type="text/javascript" src="/javascripts/voyager/ANILearn.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
+    <pnk href='https://fonts.googleapis.com/css?family=Atomic+Age|VT323' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
   </head>
@@ -22,13 +22,114 @@
     </div>
 
     <div class="pageBtns" id="missionBtn" data-clicks="1"></div>
-    <div class="pageBtns" id="timelineBtn" data-clicks="1"></div>
+    <div class="pageBtns" id="factsBtn" data-clicks="1"></div>
     <div class="pageBtns" id="soundsBtn" data-clicks="1"></div>
-    <!-- <div class="pageBtns" id="landingBtn"></div> -->
+    <div class="pageBtns" id="videoBtn" data-clicks="1"></div>
 
-    <!-- <section id="lunarlanderVideo">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/sTBIr65cL_E" frameborder="0" allowfullscreen></iframe>
-    </section> -->
+    <section id="video">
+      <iframe class="youtube-player" src="https://www.youtube.com/embed/zqPB0l5FZP4"
+      title="YouTube video player" frameborder="0" height="403" width="540"></iframe>
+    </section>
+
+    <section id = "sounds">
+      <table><tr><td>
+      <iframe width="580" height="335" src="https://www.youtube.com/embed/Bhuq9rNO_FQ?pst=PLA5Z0m2JKyVJUgkMG08WP8KsAvLrjfkjP" frameborder="0" allowfullscreen></iframe>
+      </td><td>
+      <p class="voyagerTableCell"> The Voyager message is carried by a phonograph record-a 12-inch gold-plated copper disk containing sounds and images selected to portray the diversity of life and culture on Earth. (scroll down for a track listing).</p>
+    </td></tr></table>
+    <h4> Greetings from Earth: </h4>
+    <table><tr><td>
+      <p><span>Akkadian: </span>"May all be very well"</p>
+      <p><span>Arabic: </span>"Greetings to our friends in the stars. We wish that we will meet you someday."</p>
+      <p><span>Armenian: </span>"To all those who exist in the universe, greetings."</p>
+      <p><span>Burmese: </span>"Are you well."</p>
+      <p><span>Czech: </span>"Dear Friends, we wish you the best."</p>
+      <p><span>English: </span>"Hello from the children of planet Earth."</p>
+      <p><span>German: </span>"Heartfelt greetings to all."</p>
+      <p><span>Gujarati: </span>"Greetings from a human being of the Earth. Please contact."</p>
+      <p><span>Hindi: </span>"Greetings from the inhabitants of this world."</p>
+      <p><span>Hungarian (Magyar): </span>"We are sending greetings in the Hungarian language to all peace-loving beings in the Universe."</p>
+      <p><span>Indonesian: </span>"Good night ladies and gentlemen. Goodbye and see you next time."</p>
+      <p><span>Japanese: </span>"Hello? How are you?"</p>
+      <p><span>Kechua (Quechua): </span>"Hello to everybody from this Earth, in Kechua language."</p>
+      <p><span>Latin: </span>"Greetings to you, whoever you are; we have good will towards you and bring peace across space."</p>
+      <p><span>Mandarin Chinese: </span>"Hope everyone's well. We are thinking about you all. Please come here to visit when you have time."</p>
+      <p><span>Nepap: </span>"Wishing you a peaceful future from the earthpngs."</p>
+      <p><span>Nyanja: </span>"How are all you people of other planets?"</p>
+      <p><span>Persian: </span>"Hello to the residents of far skies."</p>
+      <p><span>Polish: </span>"Welcome, creatures from beyond the outer world."</p>
+      <p><span>Punjabi: </span>"Welcome home. It is a pleasure to receive you."</p>
+      <p><span>Romanian: </span>"Greetings to everybody."</p>
+      <p><span>Serbian: </span>"We wish you everything good from our planet."</p>
+      <p><span>Sotho (Sesotho): </span> "We greet you, O great ones."</p>
+      <p><span>Sumerian: </span> "May all be well."</p>
+      <p><span>Telugu: </span>"Greetings. Best wishes from Telugu-speaking people."</p>
+      <p><span>Turkish: </span>"Dear Turkish-speaking friends, may the honors of the morning be upon your heads."</p>
+      <p><span>Welsh: </span>"Good health to you now and forever."</p>
+    </td><td>
+      <p><span>Amoy (Min dialect): </span>"Friends of space, how are you all? Have you eaten yet? Come visit us if you have time."</p>
+      <p><span>Aramaic: </span>"Peace"</p>
+      <p><span>Bengap: </span>"Hello! Let there be peace everywhere."</p>
+      <p><span>Cantonese: </span>"Hi. How are you? Wish you peace, health and happiness."</p>
+      <p><span>Dutch:</span>"Heartfelt greetings to everyone."</p>
+      <p><span>French:</span>"Hello everybody."</p>
+      <p><span>Greek:</span>"Greetings to you, whoever you are. We come in friendship to those who are friends."</p>
+      <p><span>Hebrew:</span>"Peace."</p>
+      <p><span>Hittite: </span>"Hail."</p>
+      <p><span>Ila (Zambia): </span> "We wish all of you well."</p>
+      <p><span>Itapan:</span> "Many greetings and wishes."</p>
+      <p><span>Kannada (Kanarese): </span>"Greetings. On behalf of Kannada-speaking people, 'good wishes.'"</p>
+      <p><span>Korean: </span>"How are you?"</p>
+      <p><span>Luganda (Ganda): </span>"Greetings to all peoples of the universe. God give you peace always."</p>
+      <p><span>Marathi: </span>"Greetings. The people of the Earth send their good wishes."</p>
+      <p><span>Nguni (Zulu): </span>"We greet you, great ones. We wish you longevity"</p>
+      <p><span>Oriya: </span>"Greetings to the inhabitants of the universe from the third planet Earth of the star Sun."</p>
+      <p><span>Portuguese: </span> "Peace and happiness to all."</p>
+      <p><span>Rajasthani: </span> "Hello to everyone. We are happy here and you be happy there."</p>
+      <p><span>Russian: </span> "Greetings! I Welcome You!"</p>
+      <p><span>Sinhalese: </span>"Wish You a Long life."</p>
+      <p><span>Spanish: </span>"Hello and greetings to all."</p>
+      <p><span>Swedish: </span>"Greetings from a computer programmer in the pttle university town of Ithaca on the planet Earth"</p>
+      <p><span>Thai: </span>"We in this world send you our good will"</p>
+      <p><span>Ukrainian: </span>"We are sending greetings from our world, wishing you happiness, goodness, good health and many years."</p>
+      <p><span>Vietnamese: </span>"Sincerely send you our friendly greetings."</p>
+      <p><span>Urdu: </span>"Peace on you. We the inhabitants of this earth send our greetings to you."</p>
+      <p><span>Wu: </span>"Best wishes to you all."</p>
+    </td></tr></table>
+    <h4> Music from Earth: </h4>
+    <table><tr><td>
+      <p>»	Bach, Brandenburg Concerto No. 2 in F. First Movement, Munich Bach Orchestra, Karl Richter, conductor. 4:40</p>
+      <p>»	Java, court gamelan, "Kinds of Flowers," recorded by Robert Brown. 4:43</p>
+      <p>»	Senegal, percussion, recorded by Charles Duvelle. 2:08</p>
+      <p>»	Zaire, Pygmy girls' initiation song, recorded by Colin Turnbull. 0:56</p>
+      <p>»	Australia, Aborigine songs, "Morning Star" and "Devil Bird," recorded by Sandra LeBrun Holmes. 1:26</p>
+      <p>»	Mexico, "El Cascabel," performed by Lorenzo Barcelata and the Mariachi México. 3:14</p>
+      <p>»	"Johnny B. Goode," written and performed by Chuck Berry. 2:38 </p>
+      <p>»	New Guinea, men's house song, recorded by Robert MacLennan. 1:20</p>
+      <p>» Japan, shakuhachi, "Tsuru No Sugomori" ("Crane's Nest,") performed by Goro Yamaguchi. 4:51</p>
+      <p>» Bach, "Gavotte en rondeaux" from the Partita No. 3 in E major for Violin, performed by Arthur Grumiaux. 2:55</p>
+      <p>» Mozart, The Magic Flute, Queen of the Night aria, no. 14. Edda Moser, soprano. Bavarian State Opera, Munich, Wolfgang Sawallisch, conductor. 2:55</p>
+      <p>» Georgian S.S.R., chorus, "Tchakrulo," collected by Radio Moscow. 2:18</p>
+      <p>» Peru, panpipes and drum, collected by Casa de la Cultura, Lima. 0:52</p>
+
+    </td><td>
+      <p>» "Melancholy Blues," performed by Louis Armstrong and his Hot Seven. 3:05</p>
+        <p>» Azerbaijan S.S.R., bagpipes, recorded by Radio Moscow. 2:30</p>
+        <p>» Stravinsky, Rite of Spring, Sacrificial Dance, Columbia Symphony Orchestra, Igor Stravinsky, conductor. 4:35</p>
+        <p>» Bach, The Well-Tempered Clavier, Book 2, Prelude and Fugue in C, No.1. Glenn Gould, piano. 4:48</p>
+        <p>» Beethoven, Fifth Symphony, First Movement, the Philharmonia Orchestra, Otto Klemperer, conductor. 7:20</p>
+        <p>» Bulgaria, "Izlel je Delyo Hagdutin," sung by Valya Balkanska. 4:59</p>
+        <p>» Navajo Indians, Night Chant, recorded by Willard Rhodes. 0:57</p>
+        <p>» Holborne, Paueans, Galliards, Almains and Other Short Aeirs, "The Fairie Round," performed by David Munrow and the Early Music Consort of London. 1:17</p>
+        <p>» Solomon Islands, panpipes, collected by the Solomon Islands Broadcasting Service. 1:12</p>
+        <p>» Peru, wedding song, recorded by John Cohen. 0:38</p>
+        <p>» China, ch'in, "Flowing Streams," performed by Kuan P'ing-hu. 7:37</p>
+        <p>» India, raga, "Jaat Kahan Ho," sung by Surshri Kesar Bai Kerkar. 3:30</p>
+        <p>» "Dark Was the Night," written and performed by Blind Willie Johnson. 3:15</p>
+        <p>» Beethoven, String Quartet No. 13 in B flat, Opus 130, Cavatina, performed by Budapest String Quartet. 6:37</p>
+    </td></tr></table>
+  </section>
+
 
 
     <div id="homeBtn" class="svg-wrapperW">
@@ -77,19 +178,19 @@
 
     <div id="timelineText">
       <h3> Timeline: </h3>
-      <p> The Voyager spacecraft launched in August and September of 1977 and spent more than 11 years exploring the likes of Jupiter, Saturn, Uranus and Neptune before officially heading off toward interstellar space in 1989.</p>
+      <p> The Voyager spacecraft launched in August and September of 1977 and spent more than 11 years exploring the pkes of Jupiter, Saturn, Uranus and Neptune before officially heading off toward interstellar space in 1989.</p>
       <p><span> 1977: </span> Mariner Jupiter/Saturn 1977 is renamed Voyager</p>
       <p><span> 1977 (Aug. 20): </span> Voyager 2 launched from Kennedy Space Flight Center</p>
       <p><span> 1977 (Sept. 5): </span> Voyager 1 launched from Kennedy Space Flight Center. Voyager 1 returns first spacecraft photo of Earth and Moon</p>
       <p><span> 1979 (Mar. 5): </span> Voyager 1 makes its closest approach to Jupiter</p>
       <p><span> 1979 (July 9): </span> Voyager 2 makes its closest approach to Jupiter</p>
-      <p><span> 1980 (Nov. 12): </span>Voyager 1 flies by Saturn. Voyager 1 begins its trip out of the Solar System</p>
-      <p><span> 1981 (Aug. 25): </span>Voyager 2 flies by Saturn</p>
+      <p><span> 1980 (Nov. 12): </span>Voyager 1 fpes by Saturn. Voyager 1 begins its trip out of the Solar System</p>
+      <p><span> 1981 (Aug. 25): </span>Voyager 2 fpes by Saturn</p>
       <p><span> 1982: </span>Deep Space Network upgrades two 26-m antennas to 34-m</p>
       <p><span> 1986 (Jan. 24): </span> Voyager 2 has the first-ever encounter with Uranus. Deep Space Network begins expansion of 64-m antennas to 70-m</p>
       <p><span> 1987: </span>Voyager 2 "observes" Supernova 1987A</p>
       <p><span> 1988: </span>Voyager 2 returns first color images of Neptune</p>
-      <p><span> 1989 (Aug. 25): </span>Voyager 2 is the first spacecraft to observe Neptune. Voyager 2 begins its trip out of the Solar System, below the ecliptic plane</p>
+      <p><span> 1989 (Aug. 25): </span>Voyager 2 is the first spacecraft to observe Neptune. Voyager 2 begins its trip out of the Solar System, below the ecpptic plane</p>
       <p><span>1990 (Jan. 1):</span> Begins Voyager Interstellar Mission</p>
       <p><span>1990 (Feb. 14):</span>Last Voyager Images - Portrait of the Solar System</p>
       <p><span>1998 (Feb. 17):</span>Voyager 1 passes Pioneer 10 to become the most distant human-made object in space</p>
@@ -100,20 +201,20 @@
 
     <div id="missionText">
       <h3> The Mission: </h3>
-      <p>The Voyager mission was officially approved in May 1972. Through the dedicated efforts of many skilled personnel for over three decades, the Voyagers have returned knowledge about the outer planets that had not existed in all of the preceding history of astronomy and planetary science. The Voyager spacecrafts are still performing like champs.</p>
+      <p>The Voyager mission was officially approved in May 1972. Through the dedicated efforts of many skilled personnel for over three decades, the Voyagers have returned knowledge about the outer planets that had not existed in all of the preceding history of astronomy and planetary science. The Voyager spacecrafts are still performing pke champs.</p>
 
-      <p>It must come as no surprise that there are many remarkable, "gee-whiz" facts associated with the various aspects of the Voyager mission. These tidbits have been summarized below in appropriate categories. Several may seem difficult to believe, but they are all true and accurate.</p>
+      <p>It must come as no surprise that there are many remarkable, "gee-whiz" facts associated with the various aspects of the Voyager mission. These tidbits have been summarized below in appropriate categories. Several may seem difficult to bepeve, but they are all true and accurate.</p>
 
-      <p>The total cost of the Voyager mission from May 1972 through the Neptune encounter (including launch vehicles, radioactive power source (RTGs), and DSN tracking support) is 865 million dollars. At first, this may sound very expensive, but the fantastic returns are a bargain when we place the costs in the proper perspective. It is important to realize that:</p>
+      <p>The total cost of the Voyager mission from May 1972 through the Neptune encounter (including launch vehicles, radioactive power source (RTGs), and DSN tracking support) is 865 milpon dollars. At first, this may sound very expensive, but the fantastic returns are a bargain when we place the costs in the proper perspective. It is important to reapze that:</p>
 
       <p>On a per-capita basis, this is only 8 cents per U.S. resident per year, or roughly half the cost of one candy bar each year since project inception.</p>
       <p>The entire cost of Voyager is a fraction of the daily interest on the U.S. national debt.</p>
 
       <p>A total of 11,000 workyears was devoted to the Voyager project through the Neptune encounter. This is equivalent to one-third the amount of effort estimated to complete the great pyramid at Giza to King Cheops.</p>
 
-      <p>A total of five trillion bits of scientific data had been returned to Earth by both Voyager spacecraft at the completion of the Neptune encounter. This represents enough bits to fill more than seven thousand music CDs.</p>
+      <p>A total of five trilpon bits of scientific data had been returned to Earth by both Voyager spacecraft at the completion of the Neptune encounter. This represents enough bits to fill more than seven thousand music CDs.</p>
 
-      <p>The sensitivity of our deep-space tracking antennas located around the world is truly amazing. The antennas must capture Voyager information from a signal so weak that the power striking the antenna is only 10 exponent -16 watts (1 part in 10 quadrillion). A modern-day electronic digital watch operates at a power level 20 billion times greater than this feeble level.</p>
+      <p>The sensitivity of our deep-space tracking antennas located around the world is truly amazing. The antennas must capture Voyager information from a signal so weak that the power striking the antenna is only 10 exponent -16 watts (1 part in 10 quadrilpon). A modern-day electronic digital watch operates at a power level 20 bilpon times greater than this feeble level.</p>
     </div>
 
 

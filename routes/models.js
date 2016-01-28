@@ -8,7 +8,6 @@ var saturnV = require('../3Dmodels/saturnV.json');
 var lunarlander = require('../3Dmodels/lunarlander.json');
 var apollosoyuz = require('../3Dmodels/apollosoyuz.json');
 
-var saturnVhor = require('../3Dmodels/saturnVhor.json');
 
 
 //MODEL routes for getting json

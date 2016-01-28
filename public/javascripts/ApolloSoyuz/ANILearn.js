@@ -36,7 +36,7 @@ $(document).ready(function() {
     $(this).data('clicks',click+1);
   });
 
-  
+
   $('#crewBtn').on('click', function() {
     var click = +$(this).data('clicks') || 0;
     if (click % 2 == 1) {
@@ -57,4 +57,23 @@ $(document).ready(function() {
     $(this).data('clicks',click+1);
   });
 
+  $('#videoBtn').on('click', function() {
+    var click = +$(this).data('clicks') || 0;
+    if (click % 2 == 1) {
+        $('#video').velocity("transition.slideRightBigIn");
+        $("#videoBtn").css('background-image', 'url(/images/buttons/videoH.png)');
+        for (var i = 2; i < 104; i++) {
+        if (scene.children[i].name == "apollosoyuz") {
+        scene.children[i].material.visible = false;
+        }};
+    }else{
+        $('#video').velocity("transition.slideRightBigOut");
+        $("#videoBtn").css('background-image', 'url(/images/buttons/videoA.png)');
+        for (var i = 2; i < 104; i++) {
+        if (scene.children[i].name == "apollosoyuz") {
+        scene.children[i].material.visible = true;
+        }};
+    };
+    $(this).data('clicks',click+1);
+  });
 });

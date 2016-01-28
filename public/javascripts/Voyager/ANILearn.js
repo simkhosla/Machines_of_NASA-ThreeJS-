@@ -1,11 +1,11 @@
 
 
-function setLLLearnPage() {
+function setVoyagerPage() {
     $('.pageBtns').velocity("transition.slideUpIn");
   };
 
 $(document).ready(function() {
-    window.setTimeout(setLLLearnPage, 1000);
+    window.setTimeout(setVoyagerPage, 1000);
 
   // $("#missionBtn").on('click', function(){
   //   $("#missionText").toggle();
@@ -51,12 +51,40 @@ $(document).ready(function() {
   $('#soundsBtn').on('click', function() {
     var click = +$(this).data('clicks') || 0;
     if (click % 2 == 1) {
-        // $('#crewSection').velocity("transition.slideRightBigIn");
+        $('#sounds').velocity("transition.slideRightBigIn");
         $("#soundsBtn").css('background-image', 'url(/images/buttons/voyager/soundsH.png)');
+        for (var i = 2; i < 103; i++) {
+        if (scene.children[i].name == "voyager") {
+        scene.children[i].material.visible = false;
+        }};
 
     }else{
-        // $('#crewSection').velocity("transition.slideRightBigOut");
+        $('#sounds').velocity("transition.slideRightBigOut");
         $("#soundsBtn").css('background-image', 'url(/images/buttons/voyager/soundsA.png)');
+        for (var i = 2; i < 103; i++) {
+        if (scene.children[i].name == "voyager") {
+        scene.children[i].material.visible = true;
+        }};
+    };
+    $(this).data('clicks',click+1);
+  });
+
+  $('#videoBtn').on('click', function() {
+    var click = +$(this).data('clicks') || 0;
+    if (click % 2 == 1) {
+        $('#video').velocity("transition.slideRightBigIn");
+        $("#videoBtn").css('background-image', 'url(/images/buttons/videoH.png)');
+        for (var i = 2; i < 103; i++) {
+        if (scene.children[i].name == "voyager") {
+        scene.children[i].material.visible = false;
+        }};
+    }else{
+        $('#video').velocity("transition.slideRightBigOut");
+        $("#videoBtn").css('background-image', 'url(/images/buttons/videoA.png)');
+        for (var i = 2; i < 103; i++) {
+        if (scene.children[i].name == "voyager") {
+        scene.children[i].material.visible = true;
+        }};
     };
     $(this).data('clicks',click+1);
   });
