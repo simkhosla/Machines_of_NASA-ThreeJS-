@@ -16,13 +16,17 @@
   <body>
 
     <div id="commentBox">
-      <form class="" action="/comment" method="post">
+      <table><tr><td>
+      <form class="" action="/comments" method="post">
         <input type="textarea" placeholder="What do you think of the Voyager Probe?" name="Comment"></input>
+      </td><td>
+        <input type="text" placeholder="What is your name?" name="Name"></input>
         <input type="hidden" name="Owner" value="Voyager"></input>
-        <input type="submit" class="commentBtn">Add Comment</input>
+        <p><input type="submit" class="commentBtn" value="Add Comment"></input></p>
+      </td></tr></table>
       </form>
       {{#each comments}}
-        <p><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
+        <p class="comment"><span class="commentSpan">{{Name}}</span>: {{Comment}}</p>
       {{/each}}
     </div>
 
@@ -62,6 +66,7 @@
 
     <div id="LLGallery" class="svg-wrapperW GalleryP">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shapeW" height="40" width="145" />
             <div id="textW">
               <a href="/voyager/gallery" id="aW"><span class="spot"></span>Gallery</a>
             </div>
@@ -72,13 +77,12 @@
 
     <div id="LLComments" class="svg-wrapper-active Comments">
           <svg class="svgW" height="40" width="145" xmlns="http://www.w3.org/2000/svg">
-            <rect id="shapeW" height="40" width="145" />
             <div id="textW">
               <a href="/voyager/comments" id="aW"><span class="spot"></span>Comments</a>
             </div>
           </svg>
     </div>
     <img class="nasalogo" src="/images/nasa.png"/>
-  <script type="text/javascript" src="/javascripts/threejs/stars.js"></script>
+  <script type="text/javascript" src="/javascripts/pages/stars.js"></script>
   </body>
 </html>
