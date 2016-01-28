@@ -1,6 +1,11 @@
 var mongoose = require('mongoose');
 
-var connectionString = process.env.DATABASE_URL;
+
+
+var connectionString = 'mongodb://localhost/machinesofnasa';
+if (process.env.NODE_ENV === 'production') {
+    connectionString = process.env.MONGOLAB_URI;
+}
 
 console.log(connectionString);
 mongoose.connect(connectionString);
