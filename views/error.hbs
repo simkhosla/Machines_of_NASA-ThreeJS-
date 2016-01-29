@@ -36,21 +36,23 @@
 
 <script>
 
-  function postComment() {
+  function getComments() {
       $.ajax({
         url: '/comments',
-        type: 'POST',
-        dataType: 'json',
-        data: {param1: 'value1'}
+        type: 'GET',
+        dataType: 'json'
       })
-      .done(function() {
+      .done(function(data) {
+        for i in data {
+          if (data.Owner === "404") {
+            $( "#allComments" ).append( "<p class="comment"><span class="commentSpan">"+data.Name+"</span>:"+data.Comment+"</p>" );
+        }
         console.log("success");
-      })
-      .fail(function() {
-        console.log("error");
-      })
-      .always(function() {
-        console.log("complete");
+        }
+      });
+
+      $(document).ready(function() {
+        getComments()
       });
 
   }
@@ -59,7 +61,7 @@
 
 <h1>404: Page Not Found</h1>
 <h3> Houston we have a problem! </h3>
-<!-- <p>But while you're here -- would you like to add to our 404?</p>
+<p>But while you're here -- would you like to add to our 404?</p>
 
 <div id="commentBox">
   <table><tr><td>
@@ -73,7 +75,7 @@
   </form>
   <div id="allComments">
 
-  </div> -->
+  </div>
 </div>
 
 
