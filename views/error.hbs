@@ -24,10 +24,29 @@
     font-family: 'VT323', ;
     font-size: 12px;
     position: fixed;
-    top: 150px; 
+    top: 150px;
     color: white;
     height: 420px;
     overflow: scroll;
+  }
+
+  .comment {
+    margin-left: 30px;
+    color: white; 
+  }
+
+  .commentSpan {
+    color: #8bd5ec;
+  }
+
+  .commentBtn {
+    font-family: 'VT323', ;
+    font-size: 18px;
+    padding: 3px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    border-radius: 4px;
   }
 
 </style>
@@ -65,14 +84,11 @@
 </div>
 
 <div id="commentBox">
-  <table><tr><td>
   <form class="" action="/comments" method="post">
     <input type="textarea" placeholder="Say something mean about Jim." name="Comment"></input>
-  </td><td>
     <input type="text" placeholder="Name? (optional)" name="Name"></input>
     <input type="hidden" name="Owner" value="404"></input>
     <p><input type="submit" class="commentBtn" value="Add Comment"></input></p>
-  </td></tr></table>
   </form>
   <div id="allComments">
 
