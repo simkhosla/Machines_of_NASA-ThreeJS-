@@ -62,10 +62,12 @@
 
             $( "#allComments" ).append( "<p class='comment'><span class='commentSpan'>"+$("#commentName").html+"</span>:"+$("#commentInput").html+"</p>" );
             console.log('comments added')
+            console.log($("commentName").html)
+            console.log($("commentInput").html)
         }
 
       $(document).ready(function() {
-        $(".commentBtn").on("click", addComment());
+        $(".commentBtn").on("click", function addComment());
       });
 
   }
@@ -80,7 +82,7 @@
 <div id="commentBox" align="center">
     <p><input type="textarea" placeholder="Say something mean about Jim." name="Comment" id="commentInput"></input></p>
     <p><input type="text" placeholder="Name? (optional)" name="Name" id="commentName"></input></p>
-    <p><button class="commentBtn" value="Add Comment"></button></p>
+    <p><button class="commentBtn">Add Comment</button></p>
   <div id="allComments">
 
   </div>
