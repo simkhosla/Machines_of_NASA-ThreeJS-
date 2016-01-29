@@ -32,7 +32,7 @@
 
   .comment {
     margin-left: 30px;
-    color: white; 
+    color: white;
   }
 
   .commentSpan {
@@ -65,13 +65,14 @@
         for i in data {
           if (data.Owner === "404") {
             $( "#allComments" ).append( "<p class="comment"><span class="commentSpan">"+data.Name+"</span>:"+data.Comment+"</p>" );
+            console.log('comments added')
         }
         console.log("success");
         }
       });
 
       $(document).ready(function() {
-        getComments()
+        getComments();
       });
 
   }
@@ -85,8 +86,8 @@
 
 <div id="commentBox">
   <form class="" action="/comments" method="post">
-    <input type="textarea" placeholder="Say something mean about Jim." name="Comment"></input>
-    <input type="text" placeholder="Name? (optional)" name="Name"></input>
+    <p><input type="textarea" placeholder="Say something mean about Jim." name="Comment"></input></p>
+    <p><input type="text" placeholder="Name? (optional)" name="Name"></input></p>
     <input type="hidden" name="Owner" value="404"></input>
     <p><input type="submit" class="commentBtn" value="Add Comment"></input></p>
   </form>
