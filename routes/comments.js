@@ -34,6 +34,8 @@ router.post('/', function(req, res, next) {
       res.redirect('/voyager/comments');
     } else if (req.body.Owner == "ApolloSoyuz") {
       res.redirect('/apollosoyuz/comments');
+    } else if (req.body.Owner == "404") {
+      res.render('/houstonwehaveaproblem')
     }
   });
 
