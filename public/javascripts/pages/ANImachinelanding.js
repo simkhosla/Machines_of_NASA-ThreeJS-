@@ -13,8 +13,8 @@ $('#apollosoyuz').velocity("transition.slideUpIn");
 
 
 $(document).ready(function() {
-  window.setTimeout(messageAppears, 1500);
-  window.setTimeout(buttonsAppear, 1700);
+  window.setTimeout(messageAppears, 1200);
+  window.setTimeout(buttonsAppear, 1300);
 
   //voyager button
   $('#voyager').hover(function() {
