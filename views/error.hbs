@@ -40,16 +40,28 @@
 
   .commentSpan {
     color: #8bd5ec;
+    font-size: 18px;
   }
 
-  .commentBtn {
-    font-family: 'VT323', ;
+  #commentBtn {
+    font-family: 'Special Elite', cursive;
     font-size: 18px;
     padding: 3px;
     background: none;
     border: 3px solid white;
     color: white;
     border-radius: 4px;
+    padding: 10px;
+  }
+
+  input[type="textarea"] {
+    height: 60px;
+    width: 400px;
+  }
+
+  input[type="text"] {
+    height: 30px;
+    width: 400px; 
   }
 
 </style>
@@ -57,36 +69,32 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
 <script>
+  $(document).ready(function() {
 
-  function addComment() {
 
-            $( "#allComments" ).append( "<p class='comment'><span class='commentSpan'>"+$("#commentName").html+"</span>:"+$("#commentInput").html+"</p>" );
-            console.log('comments added')
-            console.log($("commentName").html)
-            console.log($("commentInput").html)
-        }
+    $("#commentBtn").on("click", function() {
+      $("#allComments").append("<p><span class='commentSpan'>"+$("#commentName").val()+": </span>"+$("#commentInput").val()+"</p>");
+    });
 
-      $(document).ready(function() {
-        $(".commentBtn").on("click", function addComment());
-      });
-
-  }
+    });
 
 </script>
+
 
 <div align = "center"><h1>404: Page Not Found</h1>
 <h3> Houston we have a problem! </h3>
 <p>But while you're here -- would you like to add to our 404?</p>
 </div>
 
-<div id="commentBox" align="center">
-    <p><input type="textarea" placeholder="Say something mean about Jim." name="Comment" id="commentInput"></input></p>
-    <p><input type="text" placeholder="Name? (optional)" name="Name" id="commentName"></input></p>
-    <p><button class="commentBtn">Add Comment</button></p>
-  <div id="allComments">
+    <div align = "center">
+    <p><input type="textarea" placeholder="Say something mean about Jim."  id="commentInput"></input></p>
+    <p><input type="text" placeholder="Name? (optional)" id="commentName"></input></p>
+    <button id="commentBtn">Add Comment</button>
+  </div>
+
+  <div id="allComments" align="center">
 
   </div>
-</div>
 
 
 </div>
